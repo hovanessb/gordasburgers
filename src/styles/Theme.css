@@ -4,19 +4,19 @@
 /* Typography */
 
 .custom-block-title {
-  @apply customPrimary text-3xl font-bold tracking-normal;
+  @apply text-customPrimary text-3xl font-bold tracking-normal;
 }
 .custom-block-big-title {
-  @apply customPrimary text-4xl xl:text-5xl font-bold tracking-normal;
+  @apply text-customPrimary text-4xl xl:text-5xl font-bold tracking-normal;
 }
 .custom-block-subtitle {
   @apply text-xs text-customSecondary  tracking-wider font-bold uppercase;
 }
 .custom-content-title {
-  @apply customPrimary text-lg font-bold tracking-normal;
+  @apply text-customPrimary text-lg font-bold tracking-normal;
 }
 .custom-content-customPrimary {
-  @apply customPrimary text-base leading-relaxed;
+  @apply text-customPrimary text-base leading-relaxed;
 }
 .custom-content-text-gray {
   @apply text-gray-400 text-base;
@@ -56,7 +56,7 @@ html {
 /* Navbar */
 
 .navbar-link {
-  @apply customPrimary lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
+  @apply text-customPrimary lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
 }
 
 /* Preventing FOUC */
