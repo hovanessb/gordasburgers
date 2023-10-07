@@ -8,6 +8,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://facilitiesfusion.com",
+  site: "https://lasgordasburgers.com",
   integrations: [tailwind(), partytown(), robots(), sitemap(), react()]
 });
