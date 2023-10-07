@@ -12,29 +12,31 @@ const handler: Handler = async function(event) {
   try {
     const requestBody = JSON.parse(event.body) as {
       name: string;
-      org: string;
+      location: string;
       email: string;
       phone: string;
+      hours: string;
       data: string;
     };
 
       sendEmail({
-      from: "info@facilitiesfusion.com",
+      from: "booking@lasgordasburgers.com",
       to: requestBody.email,
-      subject: "Inquiry Request",
+      subject: "Booking Request",
       template: "thankyou",
       parameters: {
       },
     });
 
       sendEmail({
-      from: "inquiries@facilitiesfusion.com",
-      to: "info@facilitiesfusion.com",
-      subject: "Inquiry Request",
+      from: "booking@lasgordasburgers.com",
+      to: "booking@lasgordasburgers.com",
+      subject: "Booking Request",
       template: "inquiry",
       parameters: {
             name: requestBody.name,
-            org: requestBody.org,
+            location: requestBody.location,
+            hours: requestBody.hours,
             email: requestBody.email,
             phone: requestBody.phone,
             data: requestBody.data

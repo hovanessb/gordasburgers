@@ -1,0 +1,46 @@
+---
+import burger1 from "../assets/images/doublebacon.jpeg";
+import burger2 from "../assets/images/mauiwowie.jpeg";
+import burger3 from "../assets/images/mushroom.jpeg";
+import burger4 from "../assets/images/lagorda.jpeg";
+import {Image} from 'astro:assets'
+---
+<section id="menu" class="z-50 p-4 mt-10 text-customSecondary">
+    <h2 class="text-center  text-5xl p-5">MENU</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Grid Item 1 -->
+        <div class="relative group">
+            <div class=" top-0 left-0 w-full p-4 transform rotate-[-2deg]">
+                <Image src={burger1} alt="double bacon burger" class="w-full drop-shadow-lg rounded-md h-auto" />
+            </div>
+            <p class="px-5 text-justify"> Indulge in a taste of the Hawaiian islands with our Maui Wowie Burger. This burger features a succulent patty topped with grilled pineapple. Close your eyes, take a bite, and let the flavors transport you to a beachside luau.</p>
+        </div>
+    
+        <!-- Grid Item 2 -->
+        <div class="relative group">
+            <div class=" top-0 left-0 w-full p-4  transform rotate-[-2deg]">
+                <Image src={burger2} alt="mauiwowie burger" class="w-full drop-shadow-lg rounded-md h-auto">
+            </div>
+            <p class="px-5 text-justify">  If you can't get enough of that crispy, savory goodness, our Double Bacon Burger is a must-try. Two perfectly cooked beef patties are layered with bacon. It's a bacon lover's dream come true!</p>
+
+        </div>
+    
+        <!-- Grid Item 3 -->
+        <div class="relative group">
+            <div class=" top-0 left-0 w-full  p-4  transform rotate-[2deg]">
+                <Image src={burger3} alt="mushroom burger" class="w-full drop-shadow-lg rounded-md  h-auto">
+            </div>
+            <p class="px-5 text-justify"> Our Mushroom Burger is a vegetarian's delight and a carnivore's surprise. A hearty portobello mushroom cap is marinated and grilled to perfection, then nestled between layers of fresh lettuce and juicy tomato. It's a burger that celebrates the rich, earthy flavors of mushrooms.</p>
+
+        </div>
+    
+        <!-- Grid Item 4 -->
+        <div class="relative group">
+            <div class=" top-0 left-0 w-full  p-4  transform rotate-[2deg]">
+                <Image src={burger4} alt="la gorda burger" class="w-full drop-shadow-lg rounded-md  h-auto">
+            </div>
+            <p class="px-5 text-justify"> La Gorda Burger is a flavor-packed fiesta for your taste buds. Picture a juicy beef patty, topped with a double cheese, double meat, and a slices of fresh lettus, onion and tomato. It's a burger with a kick of flavor that'll have you saying "Chingon!" with every bite.</p>
+
+        </div>
+    </div>
+</section>

@@ -7,20 +7,20 @@ module.exports = {
 		colors: {
 		  customPrimary: "#3D5467",
 		  customSecondary: "#d9fcbbff",
-		  customDarkBg1: "#3D5467",
-		  customDarkBg2: "#8AA29E",
-		  customDarkBg3: "#686963",
-		  customDarkBg3Hover: "#29f8c8ff",
+		  customDarkBg1: "#F97068",
+		  customDarkBg2: "#212738",
+		  customDarkBg3: "#EDF2EF",
+		  customDarkBg3Hover: "#F97068",
 		  customContentSubtitle: "rgb(178, 184, 205)",
 		  customGrayBorder: "rgb(255,255,255,0.1)",
 		  customGrayText: "rgb(174, 178, 183)",
-		  customDarkBgTransparent: "#011e2cff",
+		  customDarkBgTransparent: "#57C4E5",
 		  customDarkBgTransparentDarker: "rgb(0,0,0,0.5)",
 		  customDarkBgTransparentLighter: "rgb(48, 49, 54, 0.7)"  
 		},
 		fontFamily: {
 			'sans': ['"Zen Maru Gothic"','Proxima Nova', ...defaultTheme.fontFamily.sans],
-			'mono': ['"Leckerli One"','Proxima Nova', ...defaultTheme.fontFamily.mono],
+			'mono': ['"Titan One"','Proxima Nova', ...defaultTheme.fontFamily.mono],
 		},
 		screens: {
 		  xs: "530px",

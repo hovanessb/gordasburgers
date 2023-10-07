@@ -1,7 +1,16 @@
 ---
 import "../styles/Theme.css";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Menu from "../components/Menu.astro";
+import { Navbar } from "../components/Navbar.jsx";
+import Footer from "../components/Footer.astro";
+import Bookus from "../components/Bookus.jsx";
 ---
 <Layout title="Gordas Bugers">
-test
+    <Navbar client:load />
+    <Hero />
+    <Menu />
+    <Bookus client:load />
+    <Footer />
 </Layout>

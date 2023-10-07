@@ -1,83 +1,35 @@
 ---
-import { motion } from "framer-motion";
-import dashboard from "../assets/images/hall-roof-2560454_1280.jpg";
----
-  <section
-    class="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[28vw] md:mb-[18vw] lg:mb-[10vw] xl:mb-[13vw] 2xl:mb-60 hero-bg-gradient pb-24 sm:pb-32 md:pb-44 lg:pb-0"
-    id="home"
-  >
-    <div class="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 md:pt-16 lg:pt-20 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div class="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-          Discover a new solution to building facilities
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.05 }}
-      >
-        <div class="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  customPrimary  px-8 sm:px-8 md:px-20 lg:px-4">
-          <span >Welcome</span>
-        </div>
-        <div class="mt-2 sm:mt-2 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  customPrimary  px-8 sm:px-20 md:px-24 lg:px-24">
-          to Facilities Fusion
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-      >
-        <div class="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-4 sm:px-24 ">
-        At Facilities Fusion, we understand that maintaining your property is not just about appearances; it's about protecting your investments, ensuring the safety and comfort of your occupants, and optimizing the efficiency of your operations. With a commitment to excellence, we offer a comprehensive range of building maintenance and facility management services that allow you to focus on what you do best—running your business.
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.15 }}
-      >
-        <div class="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
-          <div
-            class="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
-          >
-            Get Started
-          </div>
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: 10, zIndex: 20 }}
-        animate={{ opacity: 1, y: 0, zIndex: 20 }}
-        transition={{ duration: 0.5, delay: 0.15 }}
-      >
-        <div class="relative w-screen flex justify-center ">
-          <img
-            src={dashboard.src}
-            alt="grungy-roof-top"
-            class="w-4/5 2xl:w-[1200px] max-h-fit mx-auto absolute z-10 rounded-xl custom-border-gray hero-dashboard-border-gradient lg:top-6 xl:top-0"
-          />
-        </div>
-      </motion.div>
-      <div class="relative w-screen flex justify-center ">
-        <div class="custom-shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-52 hidden lg:block">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            class=" bg-customDarkBg2"
-          >
-            <path
-              d="M1200 0L0 0 598.97 114.72 1200 0z"
-              class="shape-fill custom-bg-dark1"
-            ></path>
-          </svg>
-        </div>
+import dashboard from "../assets/images/logo.png";
+import videos from "../assets/videos/losgordos.mp4";
+import {Image} from 'astro:assets'
+--- 
+<section
+  class="relative z-0 p-10 lg:p-40 flex justify-center items-center"
+  id="home"
+>   <video autoplay loop muted playsinline class="w-full object-cover absolute top-60 lg:top-20 -z-10">
+  <source src={videos} type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  <div class="w-full rounded-md p-4 backdrop-blur-md border-customSecondary border-2 md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center  text-center">
+      <div class="text-customSecondary uppercase tracking-widest text-sm sm:text-base  mb-6   font-bold">
+        Bay Area Pop Up Burgers - A Fusion of Hispano-American and Hawaiian Flavors
       </div>
-    </div>
-  </section>
+      <div class="w-full columns-1 lg:columns-2">
+          <Image
+            src={dashboard}
+            alt="grungy-roof-top"
+            class="w-full mx-auto z-10 rounded-xl"
+       />
+      <div class=" text-customSecondary text-sm lg:text-base xl:text-lg sm:text-base m-4 text-left sm:px-12">
+          At Las Gordas Burgers, we're all about serving up mouthwatering burgers that bring together the rich Hispanic and tropical Hawaiian flavors, right here in the heart of San Jose. Our passion for great food and friendly service is what drives us every day, and we can't wait to share our culinary love with you.</div>
+      </div>
+      <div class="flex sm:flex-row mt-14justify-center">
+        <a
+          href="/#books"
+          class="custom-button-colored w-64 sm:w-52 h-12 mr-0 sm:mr-4 lg:mr-6 mb-2 sm:mb-0"
+        >
+          Book Us
+      </a>
+      </div>
+  </div>
+</section>

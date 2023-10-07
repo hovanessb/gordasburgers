@@ -19,7 +19,7 @@
   @apply text-customPrimary text-base leading-relaxed;
 }
 .custom-content-text-gray {
-  @apply text-gray-400 text-base;
+  @apply text-customPrimary text-base;
 }
 
 /* Backgrounds */
@@ -35,7 +35,7 @@
 }
 body,
 html {
-  @apply bg-customDarkBg2;
+  @apply bg-customDarkBg1;
 }
 
 /* Borders */
@@ -50,13 +50,13 @@ html {
 /* Buttons */
 
 .custom-button-colored, button, [type='button'], [type='reset'], [type='submit'] {
-  @apply rounded-lg font-bold bg-customPrimary text-customDarkBg3 flex justify-center items-center hover:bg-[#d9fcbbff] cursor-pointer transition;
+  @apply rounded-lg font-bold bg-customDarkBgTransparent text-customPrimary flex justify-center items-center hover:bg-[#d9fcbbff] cursor-pointer transition;
 }
 
 /* Navbar */
 
 .navbar-link {
-  @apply text-customPrimary lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
+  @apply text-customSecondary lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
 }
 
 /* Preventing FOUC */
